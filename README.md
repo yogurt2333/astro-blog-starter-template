@@ -6,57 +6,50 @@
 
 <!-- dash-content-start -->
 
-Create a blog with Astro and deploy it on Cloudflare Workers as a [static website](https://developers.cloudflare.com/workers/static-assets/).
+使用 Astro 创建一个博客，并将其作为 [静态网站](https://developers.cloudflare.com/workers/static-assets/).部署到 Cloudflare Workers 上。
 
-Features:
+功能:
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+- ✅ 极简风格（可自定义！）
+- ✅ Lighthouse 性能评分 100/100
+- ✅ 支持 SEO，包含规范 URL 和 OpenGraph 数据
+- ✅ 支持站点地图
+- ✅ 支持 RSS 订阅
+- ✅ 支持 Markdown 和 MDX
 
 <!-- dash-content-end -->
 
-## Getting Started
+## 快速开始
 
-Outside of this repo, you can start a new project with this template using [C3](https://developers.cloudflare.com/pages/get-started/c3/) (the `create-cloudflare` CLI):
+在此仓库之外，您可以使用 [C3](https://developers.cloudflare.com/pages/get-started/c3/) (即 `create-cloudflare` 命令行工具)基于此模板启动一个新项目:
 
 ```bash
 npm create cloudflare@latest -- --template=cloudflare/templates/astro-blog-starter-template
 ```
 
-A live public deployment of this template is available at [https://astro-blog-starter-template.templates.workers.dev](https://astro-blog-starter-template.templates.workers.dev)
+此模板的公开部署示例可在 [https://astro-blog-starter-template.templates.workers.dev](https://astro-blog-starter-template.templates.workers.dev)查看
 
-## 🚀 Project Structure
+## 🚀 项目结构
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Astro 会在 `src/pages/` 目录中查找`.astro` 或 `.md` 文件。 每个页面会根据其文件名作为路由暴露。
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+`src/components/` 目录没有特殊之处，但我们通常将 Astro/React/Vue/Svelte/Preact 组件放在这里。
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+`src/content/` 目录包含相关的 Markdown 和 MDX 文档的“集合”。 
+使用 `getCollection()` 从 `src/content/blog/`获取文章, 并通过可选模式对 frontmatter 进行类型检查. 更多信息请参阅 [Astro 的内容集合文档](https://docs.astro.build/en/guides/content-collections/).
 
-Any static assets, like images, can be placed in the `public/` directory.
+任何静态资源（如图片）可以放在 `public/` 目录中。
 
-## 🧞 Commands
+## 🧞 命令
 
-All commands are run from the root of the project, from a terminal:
+所有命令均从项目的根目录在终端中运行:
 
-| Command                           | Action                                           |
+| 命令                              | 操作                                             |
 | :-------------------------------- | :----------------------------------------------- |
-| `npm install`                     | Installs dependencies                            |
-| `npm run dev`                     | Starts local dev server at `localhost:4321`      |
-| `npm run build`                   | Build your production site to `./dist/`          |
-| `npm run preview`                 | Preview your build locally, before deploying     |
-| `npm run astro ...`               | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help`         | Get help using the Astro CLI                     |
-| `npm run build && npm run deploy` | Deploy your production site to Cloudflare        |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+| `npm install`                     | 安装依赖项                                        |
+| `npm run dev`                     | 启动本地开发服务器，地址为 `localhost:4321`         |
+| `npm run build`                   | 构建生产环境站点到 `./dist/`                       |
+| `npm run preview`                 | 在部署前本地预览构建结果                            |
+| `npm run astro ...`               | 运行 Astro CLI 命令，如 `astro add`, `astro check` |
+| `npm run astro -- --help`         | 获取 Astro CLI 的使用帮助                           |
+| `npm run build && npm run deploy` | 将生产环境站点部署到 Cloudflare                     |
