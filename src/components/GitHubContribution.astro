@@ -1,0 +1,28 @@
+---
+  import React from 'react';
+  import Calendar from 'react-github-contribution-calendar';
+---
+<div id="github-calendar">
+<link rel="stylesheet" href="node_modules/react-github-contribution-calendar/default.css" type="text/css" />
+</div>
+
+<script>
+  import React from 'react';
+  import ReactDOM from 'react-dom/client';
+  import Calendar from 'react-github-contribution-calendar';
+
+  const values = {
+    '2016-06-23': 1,
+    '2016-06-26': 2,
+    '2016-06-27': 3,
+    '2016-06-28': 4,
+    '2016-06-29': 4
+  };
+  const until = '2016-06-30';
+
+  const elem = document.getElementById('github-calendar');
+  if (elem) {
+    const root = ReactDOM.createRoot(elem);
+    root.render(React.createElement(Calendar, { values, until }));
+  }
+</script>
